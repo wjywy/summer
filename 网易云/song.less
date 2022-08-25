@@ -1,0 +1,191 @@
+@searchHeight: 375px * (40/420); //搜索框高
+@searchWidth: 375px * (380/420); //搜索框宽
+@searchMargin: 375px * (16/420); //搜索框与图片间距
+@margin9: 375px * (20/420); //搜索框与左边间距
+@findAndInputW: 375px * (380/420); //搜索框宽
+@imgAndFindSizeW:375px * (96/420);  //图标框的宽
+@imgAndFindSizeH:(35px / (420/375));//图标框的高
+@margin7:(25px / (420/375));//图标框与搜索框的间距
+@margin8:(20px / (420 / 375));//图标框与上方间距
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.setTopBoxAndFindBox {
+   height: 140px;
+   
+}
+
+.topBoxAndFindBox {
+    position: fixed;
+    width: 375px;
+    background-color: white;
+    height: 140px;
+}
+
+.topBox {               //最顶排
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: @margin7;
+    margin-top: @margin8;
+    margin-left: @margin9;
+    .imgAndFind {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: @imgAndFindSizeW;
+        height: @imgAndFindSizeH;
+        border-radius: 20px;
+        border: 1px solid rgb(153, 153, 153);
+        img {
+            width: 15px;
+            height: 15px;
+        }
+        .image1 {
+            margin-left: 15px;
+        }
+        
+        .image2 {
+            margin-right: 15px;
+        }
+        .divide {
+            height: 15px;
+            width: 1px;
+            background-color: rgb(153, 153, 153);
+        }
+    }
+    .souSuo {
+        margin-left: 70px;
+    }
+}
+
+
+
+//搜索框
+.findAndInput {
+    margin-left: @margin9;
+    width: @findAndInputW;
+    height: @searchHeight;
+    // margin-bottom: @searchMargin;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(153, 153, 153);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .find {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+
+    .research {
+        // margin-left: 5px;
+        // width: @searchWidth;
+        background-color: rgb(247, 247, 247);
+        color: rgb(153, 153, 153);
+        border: 1px solid rgb(247, 247, 247);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+.totalBox {
+    display: flex;
+    flex-direction: column;
+}
+
+@margin1:375px * (20/(667*(420/375))) ; //划线与上方的间距
+@margin2:375px * (13px/(667*(420/375)));  //划线与下方的间距
+@yuan1: 375px * (25/420); //圆
+
+.normalBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: @margin9;
+}
+
+.divide {
+    margin-top: @margin1;
+    margin-bottom: @margin2;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+}
+
+.introduceAndSingpeople {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(153,153,153);
+}
+
+.introduce {
+    font-size: 10px;
+}
+
+.singPeople {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+
+.songName {
+    color: rgb(80,125,175);
+    font-size: 15px;
+}
+
+.yuanRight {
+    width: @yuan1;
+    height: @yuan1;
+    border-radius: 375px * (25/420) * (1/2);
+    background-color: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+
+
+    .triangleRight {
+        //三角
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        border: 7px solid transparent;
+        border-left-color: rgb(153, 153, 153);
+        margin-left: 10px;
+    }
+}
+
+// @yuan1:375px * (25/420);
+// .yuan {
+//     width: @yuan1;
+//     height: @yuan1;
+//     border-radius: @yuan1 / 2;
+//     position: absolute;
+//     right: 2px;
+// }
+
+// .triangle {
+//     width: 0;
+//     height: 0;
+//     line-height: 0;
+//     font-size: 0;
+//     border: 5px solid transparent;
+//     border-left-color: rgb(153, 153, 153);
+// }
+

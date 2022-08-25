@@ -1,0 +1,228 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.blurBackground {
+  backdrop-filter: blur(20px);
+}
+.titleBox {
+  height: 70px;
+}
+.helpSongList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 375px;
+  height: 70px;
+  position: fixed;
+}
+.imgAndFind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 85.71428571px;
+  height: 31.25px;
+  border-radius: 20px;
+  margin-left: 16.07142857px;
+  border: 1px solid #999999;
+}
+.imgAndFind img {
+  width: 15px;
+  height: 15px;
+}
+.imgAndFind .image1 {
+  margin-left: 15px;
+}
+.imgAndFind .image2 {
+  margin-right: 15px;
+}
+.imgAndFind .divide {
+  height: 15px;
+  width: 1px;
+  background-color: #999999;
+}
+.songList {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+.yuanAndStart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 62.5px;
+  width: 375px;
+}
+.yuanAndStart .yuan {
+  width: 22.32142857px;
+  height: 22.32142857px;
+  border-radius: 11.16071429px;
+  background-color: transparent;
+  border: 1px solid #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16.07142857px;
+  margin-right: 22.32142857px;
+}
+.yuanAndStart .yuan .triangle {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 7px solid transparent;
+  border-left-color: #333333;
+  margin-left: 10px;
+}
+.yuanAndStart .list {
+  font-size: 10px;
+  color: #b2b2b2;
+}
+.shareColor {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.red {
+  background-color: #c0678f;
+}
+.green {
+  background-color: #63c4bb;
+}
+.orange {
+  background-color: #e97f71;
+}
+.blue {
+  background-color: #6fb6e3;
+}
+.topBox {
+  width: 375px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topBox .topBoxImgRight {
+  display: flex;
+  flex-direction: row;
+}
+.topBox .topBoxImgRight .topBoxImg {
+  width: 128.57142857px;
+  height: 126.78571429px;
+  border-radius: 5px;
+  margin-left: 22.32142857px;
+}
+.topBox .topBoxImgRight .topRightBox {
+  height: 126.78571429px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 22.32142857px;
+  margin-right: 22.32142857px;
+}
+.topBox .topBoxImgRight .topRightBox .topBoxBang {
+  font-size: 16px;
+  color: white;
+}
+.topBox .topBoxImgRight .topRightBox .MusicAndName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topBox .topBoxImgRight .topRightBox .MusicAndName .WangYiMusic {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.topBox .topBoxImgRight .topRightBox .MusicAndName .topBoxMusic {
+  font-size: 12px;
+  color: #f3e1e9;
+}
+.topBox .topBoxImgRight .topRightBox .topBoxIntroduce {
+  font-size: 10px;
+  color: #e6c3d3;
+}
+.topBox .share {
+  color: white;
+  margin-top: 22.32142857px;
+  width: 180px;
+  height: 36.01190476px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+}
+.total .normalBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15.05943457px;
+}
+.total .normalBox .numberBox {
+  font-size: 15px;
+  color: #999999;
+  margin-left: 16.07142857px;
+  margin-right: 22.32142857px;
+}
+.total .normalBox .songAndPeople {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.total .normalBox .songAndPeople .songName {
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 4.01584922px;
+}
+.total .normalBox .songAndPeople .middleBox {
+  display: flex;
+  flex-direction: row;
+  color: #999999;
+  width: 223.21428571px;
+}
+.total .normalBox .songAndPeople .middleBox .singPeoples {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.total .normalBox .songAndPeople .middleBox .background {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.total .normalBox .yuanRight {
+  width: 22.32142857px;
+  height: 22.32142857px;
+  border-radius: 11.16071429px;
+  background-color: transparent;
+  border: 1px solid #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+.total .normalBox .yuanRight .triangleRight {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 7px solid transparent;
+  border-left-color: #999999;
+  margin-left: 10px;
+}

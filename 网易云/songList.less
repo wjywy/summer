@@ -1,0 +1,311 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@topBoxSizeH: (280px / (420/375)); //上方盒子的高
+@topBoxImgSizeW: 375px * (144/420); //图片的宽
+@topBoxImgSizeH: (142px / (420/375)); //图片的高
+@margin5: 375px * (25/420); //toprightbox离左边的间距
+@margin6: 375px * (17/420); //topboximg离左边的间距
+@margin6: (25px / (420/375)); //share图标离上方距离
+@margin7: 375px * (180/375); //share图标的宽
+@margin8: (55px / (420/275)); //share图标的高
+@imgAndFindSizeW:375px * (96/420);  //图标框的宽
+@imgAndFindSizeH:(35px / (420/375));//图标框的高
+
+.blurBackground {
+    backdrop-filter: blur(20px);
+}
+
+.titleBox {
+height: 70px;
+}
+
+.helpSongList {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 375px;
+    height: 70px;
+    // background-color: rgb(195, 111, 146);
+    position: fixed;
+}
+
+.imgAndFind {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: @imgAndFindSizeW;
+    height: @imgAndFindSizeH;
+    border-radius: 20px;
+    margin-left: @margin1;
+    border: 1px solid rgb(153, 153, 153);
+    img {
+        width: 15px;
+        height: 15px;
+    }
+    .image1 {
+        margin-left: 15px;
+    }
+    
+    .image2 {
+        margin-right: 15px;
+    }
+    .divide {
+        height: 15px;
+        width: 1px;
+        background-color: rgb(153, 153, 153);
+    }
+}
+
+
+.songList {
+    font-size: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    // position: fixed;
+}
+
+// 播放全部
+@yuan1: 375px * (25/420); //圆
+@yuanAndStartSizeH:(70px / (420/375));//播放框的高
+@yuanAndStartSizeW:375px;
+
+.yuanAndStart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: @yuanAndStartSizeH;
+    width: @yuanAndStartSizeW;
+
+    .yuan {
+        width: @yuan1;
+        height: @yuan1;
+        border-radius: 375px * (25/420) * (1/2);
+        background-color: transparent;
+        border: 1px solid rgb(51, 51, 51);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: @margin1;
+        margin-right: @margin2;
+
+        .triangle {
+            //三角
+            width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            border: 7px solid transparent;
+            border-left-color: rgb(51, 51, 51);
+            margin-left: 10px;
+        }
+    }
+
+    // .start {
+
+    // }
+
+    .list {
+        font-size: 10px;
+        color: rgb(178, 178, 178);
+    }
+}
+
+
+// 上方的盒子
+.shareColor {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.red {
+    background-color: rgb(192, 103, 143);
+}
+
+.green {
+    background-color: rgb(99,196,187);
+}
+
+.orange {
+    background-color: rgb(233,127,113);
+}
+
+.blue {
+    background-color: rgb(111,182,227);
+}
+.topBox {
+    width: 375px;
+    height: @topBoxSizeH;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .topBoxImgRight {
+        display: flex;
+        flex-direction: row;
+
+        .topBoxImg {
+            width: @topBoxImgSizeW;
+            height: @topBoxImgSizeH;
+            border-radius: 5px;
+            margin-left: @margin6;
+        }
+
+        .topRightBox {
+            height: @topBoxImgSizeH ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: @margin5;
+            margin-right: @margin5;
+            .topBoxBang {
+                font-size: 16px;
+                color: white;
+            }
+
+            .MusicAndName{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .WangYiMusic {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    margin-right: 5px;
+                }
+    
+                .topBoxMusic {
+                    font-size: 12px;
+                    color: rgb(243, 225, 233);
+                }
+            }
+
+            .topBoxIntroduce {
+                font-size: 10px;
+                color: rgb(230, 195, 211);
+            }
+        }
+    }
+
+    .share {
+        color: white;
+        margin-top: @margin6;
+        width: @margin7 ;
+        height: @margin8;
+        // background-color: rgb(194, 113, 151);
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+@margin1: 375px * (18/420); //序号离左边的间距
+@margin2: 375px * (25/420); //序号离右边的间距
+@margin3: 375px * (30/(667*(420/375))); //排与排之间的间距
+@margin4: 375px * (8/(667*(420/375))); //中间上面与下面之间的间距
+@margin9: 375px * (250/420);  //文本的长度限制
+
+.total {
+    //总盒子
+    display: flex;
+    flex-direction: column;
+
+    .normalBox {
+        //每一排的盒子
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: @margin3;
+
+        .numberBox {
+            //左边的序号
+            font-size: 15px;
+            color: rgb(153, 153, 153);
+            margin-left: @margin1;
+            margin-right: @margin2;
+        }
+
+        .songAndPeople {
+            //中间上下两个
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 10px;
+            
+
+            .songName {
+                //中间上面
+                font-size: 15px;
+                color: rgb(51, 51, 51);
+                margin-bottom: @margin4;
+              
+            }
+
+            .middleBox {
+                //中间下面
+                display: flex;
+                flex-direction: row;
+                color: rgb(153, 153, 153);
+                width: @margin9;
+
+                .singPeoples {
+                    //歌唱者
+                    display: flex;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .background {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .yuanRight {
+            width: @yuan1;
+            height: @yuan1;
+            border-radius: 375px * (25/420) * (1/2);
+            background-color: transparent;
+            border: 1px solid rgb(153, 153, 153);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+
+    
+            .triangleRight {
+                //三角
+                width: 0;
+                height: 0;
+                line-height: 0;
+                font-size: 0;
+                border: 7px solid transparent;
+                border-left-color: rgb(153, 153, 153);
+                margin-left: 10px;
+            }
+        }
+    }
+}

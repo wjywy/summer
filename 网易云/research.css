@@ -1,0 +1,111 @@
+.topBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 22.32142857px;
+}
+.topBox .imgAndFind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 85.71428571px;
+  height: 31.25px;
+  border-radius: 20px;
+  border: 1px solid #999999;
+}
+.topBox .imgAndFind img {
+  width: 15px;
+  height: 15px;
+}
+.topBox .imgAndFind .image1 {
+  margin-left: 15px;
+}
+.topBox .imgAndFind .image2 {
+  margin-right: 15px;
+}
+.topBox .imgAndFind .divide {
+  height: 15px;
+  width: 1px;
+  background-color: #999999;
+}
+.topBox .souSuo {
+  margin-left: 70px;
+}
+.findAndInput {
+  margin-left: 13.39285714px;
+  width: 339.28571429px;
+  height: 35.71428571px;
+  margin-bottom: 14.28571429px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  color: #999999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.findAndInput .find {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.findAndInput .research {
+  background-color: #f7f7f7;
+  color: #999999;
+  border: 1px solid #f7f7f7;
+}
+.findAndInput .research:focus {
+  outline: none;
+}
+.totalBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.normalBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 17.56934033px;
+}
+.sortNumber {
+  margin-left: 13.39285714px;
+  margin-right: 22.32142857px;
+}
+.oldColor {
+  color: #b9b9b9;
+}
+.changeColor {
+  color: #ff3a3a;
+}
+.contentAndName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 217.85714286px;
+}
+.contentAndName .content {
+  font-size: 10px;
+  color: #b9b9b9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contentAndName .name {
+  font-size: 15px;
+  color: #333333;
+}
+.hotNumberDiv {
+  height: 10px;
+  width: 60px;
+}
+.hotNumber {
+  font-size: 10px;
+  color: #b9b9b9;
+  position: absolute;
+  right: 14.28571429px;
+}
+.gone {
+  display: none;
+}

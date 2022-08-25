@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.setTopBoxAndFindBox {
+  height: 140px;
+}
+.topBoxAndFindBox {
+  position: fixed;
+  width: 375px;
+  background-color: white;
+  height: 140px;
+}
+.topBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 22.32142857px;
+  margin-top: 17.85714286px;
+  margin-left: 17.85714286px;
+}
+.topBox .imgAndFind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 85.71428571px;
+  height: 31.25px;
+  border-radius: 20px;
+  border: 1px solid #999999;
+}
+.topBox .imgAndFind img {
+  width: 15px;
+  height: 15px;
+}
+.topBox .imgAndFind .image1 {
+  margin-left: 15px;
+}
+.topBox .imgAndFind .image2 {
+  margin-right: 15px;
+}
+.topBox .imgAndFind .divide {
+  height: 15px;
+  width: 1px;
+  background-color: #999999;
+}
+.topBox .souSuo {
+  margin-left: 70px;
+}
+.findAndInput {
+  margin-left: 17.85714286px;
+  width: 339.28571429px;
+  height: 35.71428571px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  color: #999999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.findAndInput .find {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.findAndInput .research {
+  background-color: #f7f7f7;
+  color: #999999;
+  border: 1px solid #f7f7f7;
+}
+.findAndInput .research:focus {
+  outline: none;
+}
+.totalBox {
+  display: flex;
+  flex-direction: column;
+}
+.normalBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17.85714286px;
+}
+.divide {
+  margin-top: 10.03962305px;
+  margin-bottom: 6.52575498px;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+}
+.introduceAndSingpeople {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #999999;
+}
+.introduce {
+  font-size: 10px;
+}
+.singPeople {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.songName {
+  color: #507daf;
+  font-size: 15px;
+}
+.yuanRight {
+  width: 22.32142857px;
+  height: 22.32142857px;
+  border-radius: 11.16071429px;
+  background-color: transparent;
+  border: 1px solid #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+.yuanRight .triangleRight {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 7px solid transparent;
+  border-left-color: #999999;
+  margin-left: 10px;
+}

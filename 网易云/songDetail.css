@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blurBackground {
+  backdrop-filter: blur(1000px);
+  width: 100%;
+  height: 100%;
+}
+.topBoxFather {
+  height: 71.42857143px;
+}
+.topBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 71.42857143px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.topBox .imgAndFind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 85.71428571px;
+  height: 31.25px;
+  border-radius: 20px;
+  border: 1px solid #999999;
+}
+.topBox .imgAndFind img {
+  width: 15px;
+  height: 15px;
+}
+.topBox .imgAndFind .image1 {
+  margin-left: 15px;
+}
+.topBox .imgAndFind .image2 {
+  margin-right: 15px;
+}
+.topBox .imgAndFind .divide {
+  height: 15px;
+  width: 1px;
+  background-color: #999999;
+}
+.topBox .souSuo {
+  margin-left: 70px;
+  color: white;
+}
+.pictureBox {
+  height: 448px;
+  width: 375px;
+}
+.musicPicture {
+  width: 375px;
+  height: 410.71428571px;
+  z-index: 1;
+  position: absolute;
+}
+.pictureArea {
+  width: 186px;
+  height: 186px;
+  border-radius: 93px;
+  position: absolute;
+  top: 156px;
+  left: 94px;
+  z-index: 2;
+}
+.pictureAreaRotate {
+  animation: move 7s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.yuan {
+  width: 49.10714286px;
+  height: 49.10714286px;
+  border-radius: 24.55357143px;
+  background-color: transparent;
+  border: 1px solid white;
+  position: absolute;
+  top: 221px;
+  left: 159px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 10px solid transparent;
+  border-left-color: #ffffff;
+  margin-left: 10px;
+}
+.startSing {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 10px solid transparent;
+  border-left-color: white;
+  border-right-color: white;
+}
+.songWordArea {
+  height: 115px;
+  text-align: center;
+  overflow: scroll;
+}
+.songWord {
+  color: white;
+  white-space: pre-line;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+.listen {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 17.85714286px;
+  margin-top: 17.85714286px;
+  margin-left: 13.39285714px;
+}
+.similar {
+  display: flex;
+  flex-direction: column;
+}
+.similar .simiNormalBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 17.85714286px;
+}
+.similar .simiNormalBox .simiImage {
+  width: 40.17857143px;
+  height: 40.17857143px;
+  margin-left: 13.39285714px;
+  margin-right: 13.39285714px;
+}
+.similar .simiNormalBox .simiNameAndAuthorBackground {
+  display: flex;
+  flex-direction: column;
+  width: 178.57142857px;
+}
+.similar .simiNormalBox .simiNameAndAuthorBackground .simiName {
+  color: #ffffff;
+  font-size: 12px;
+  margin-bottom: 8.92857143px;
+}
+.similar .simiNormalBox .simiNameAndAuthorBackground .simiAuthorBackground {
+  color: #999999;
+  font-size: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.similar .simiNormalBox .yuanRight {
+  width: 22.32142857px;
+  height: 22.32142857px;
+  border-radius: 11.16071429px;
+  background-color: transparent;
+  border: 1px solid #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+.similar .simiNormalBox .yuanRight .triangleRight {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 7px solid transparent;
+  border-left-color: #999999;
+  margin-left: 10px;
+}
+.perfectComment {
+  color: #ffffff;
+  margin-top: 17.85714286px;
+  margin-left: 9.82142857px;
+  font-size: 15px;
+}
+.commentArea {
+  display: flex;
+  flex-direction: column;
+}
+.commentArea .oneComment {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.commentArea .oneComment .picture {
+  width: 31.25px;
+  height: 31.25px;
+  border-radius: 31.25px/2;
+  margin-left: 9.82142857px;
+  margin-right: 9.82142857px;
+  margin-top: 20.53571429px;
+}
+.commentArea .oneComment .peopleTimeContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.commentArea .oneComment .peopleTimeContent .commentPeople {
+  font-size: 10px;
+  color: #989c9e;
+  margin-top: 20.53571429px;
+}
+.commentArea .oneComment .peopleTimeContent .time {
+  font-size: 8px;
+  color: #686f75;
+  margin-bottom: 8.92857143px;
+}
+.commentArea .oneComment .peopleTimeContent .commentContent {
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 17.85714286px;
+}
+.commentArea .oneComment .callCount {
+  font-size: 10px;
+  color: #686f75;
+  position: absolute;
+  right: 40px;
+  margin-top: 20.53571429px;
+}
+.commentArea .oneComment .call {
+  width: 17.85714286px;
+  height: 13.39285714px;
+  position: absolute;
+  margin-top: 20.53571429px;
+  right: 16px;
+}
+.divide {
+  height: 1px;
+  width: 375px;
+  background-color: #989c9e;
+}
+.gone {
+  display: none;
+}
