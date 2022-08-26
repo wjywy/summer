@@ -63,7 +63,14 @@ window.onload = function () {
 
             let share = document.createElement('div');//分享
             topBox.appendChild(share);
-            share.innerHTML = '分享给微信好友';
+            let shareIcon = document.createElement('img');
+            shareIcon.src = '../assets/分享 (1).png';
+            share.appendChild(shareIcon);
+            shareIcon.classList.add('shareIcon');
+            let shareText = document.createElement('div');
+            share.appendChild(shareText);
+            shareText.classList.add('shareText');
+            shareText.innerHTML = '分享给微信好友';
             share.classList.add('share');
 
             // 上方大盒的背景色
@@ -127,6 +134,10 @@ window.onload = function () {
                 songAndPeople.appendChild(middleBox);
                 middleBox.classList.add('middleBox');
 
+                // let special = document.createElement('div');
+                // middleBox.appendChild(special);
+                // special.innerHTML = 'SQ';
+                // special.classList.add('special');
 
                 let singPeoples = document.createElement('div');//唱歌的人们
                 middleBox.appendChild(singPeoples);
@@ -134,7 +145,11 @@ window.onload = function () {
                 for (let k = 0; k < res.playlist.tracks[i].ar.length; k++) {
                     let people = document.createElement('div');
                     singPeoples.appendChild(people);
+                    if(k==res.playlist.tracks[i].ar.length-1){
+                    people.innerHTML = res.playlist.tracks[i].ar[k].name + '-';
+                }else {
                     people.innerHTML = res.playlist.tracks[i].ar[k].name + '/';
+                }
                 }
 
                 let background = document.createElement('div');//背景

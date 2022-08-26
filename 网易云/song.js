@@ -97,26 +97,6 @@ window.onload = function () {
             }
             for (let i = 0; i < normalBoxList.length; i++) {
                 normalBoxList[i].addEventListener('click', function () {
-                    // $.ajax({
-                    //     type: 'GET',
-                    //     dataType: 'json',
-                    //     url: 'http://localhost:3000/playlist/detail',
-                    //     data: {
-                    //         id: res.result.songs[i].id
-                    //     },
-                    //     success: function (res) {
-                    //         let songListData = {
-                    //             songListId: songIdList[i],
-                    //             songMusicPicture: res.pla,
-                    //             eachSongName: res.result.songs[i].name
-                    //         };
-                    //         localStorage.setItem('songListData', JSON.stringify(songListData));
-                    //         location.href = './songDetail.html';
-                    //     },
-                    //     error: function (err) {
-                    //         console.log(err);
-                    //     }
-                    // })
                     let songListData = {
                         songListId: songIdList[i],
                         songMusicPicture: res.result.songs[i].artists[0].img1v1Url,

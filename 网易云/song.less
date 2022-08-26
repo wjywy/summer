@@ -1,12 +1,12 @@
-@searchHeight: 375px * (40/420); //搜索框高
-@searchWidth: 375px * (380/420); //搜索框宽
-@searchMargin: 375px * (16/420); //搜索框与图片间距
-@margin9: 375px * (20/420); //搜索框与左边间距
-@findAndInputW: 375px * (380/420); //搜索框宽
-@imgAndFindSizeW:375px * (96/420);  //图标框的宽
-@imgAndFindSizeH:(35px / (420/375));//图标框的高
-@margin7:(25px / (420/375));//图标框与搜索框的间距
-@margin8:(20px / (420 / 375));//图标框与上方间距
+@searchHeight: 23.4375rem * (40/420); //搜索框高
+@searchWidth: 23.4375rem * (380/420); //搜索框宽
+@searchMargin: 23.4375rem * (16/420); //搜索框与图片间距
+@margin9: 23.4375rem * (20/420); //搜索框与左边间距
+@findAndInputW: 23.4375rem * (380/420); //搜索框宽
+@imgAndFindSizeW: 23.4375rem * (96/420); //图标框的宽
+@imgAndFindSizeH: (2.1875rem / (420/375)); //图标框的高
+@margin7: (1.5625rem / (420/375)); //图标框与搜索框的间距
+@margin8: (1.25rem / (420 / 375)); //图标框与上方间距
 
 body {
     padding: 0;
@@ -14,24 +14,26 @@ body {
 }
 
 .setTopBoxAndFindBox {
-   height: 140px;
-   
+    height: 8.75rem;
+
 }
 
 .topBoxAndFindBox {
     position: fixed;
-    width: 375px;
+    width: 23.4375rem;
     background-color: white;
-    height: 140px;
+    height: 8.75rem;
 }
 
-.topBox {               //最顶排
+.topBox {
+    //最顶排
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: @margin7;
     margin-top: @margin8;
     margin-left: @margin9;
+
     .imgAndFind {
         display: flex;
         flex-direction: row;
@@ -40,27 +42,31 @@ body {
         background-color: rgba(255, 255, 255, 0.5);
         width: @imgAndFindSizeW;
         height: @imgAndFindSizeH;
-        border-radius: 20px;
-        border: 1px solid rgb(153, 153, 153);
+        border-radius: 1.25rem;
+        border: .0625rem solid rgb(153, 153, 153);
+
         img {
-            width: 15px;
-            height: 15px;
+            width: .9375rem;
+            height: .9375rem;
         }
+
         .image1 {
-            margin-left: 15px;
+            margin-left: .9375rem;
         }
-        
+
         .image2 {
-            margin-right: 15px;
+            margin-right: .9375rem;
         }
+
         .divide {
-            height: 15px;
-            width: 1px;
+            height: .9375rem;
+            width: .0625rem;
             background-color: rgb(153, 153, 153);
         }
     }
+
     .souSuo {
-        margin-left: 70px;
+        margin-left: 4.375rem;
     }
 }
 
@@ -72,7 +78,7 @@ body {
     width: @findAndInputW;
     height: @searchHeight;
     // margin-bottom: @searchMargin;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: rgb(247, 247, 247);
     color: rgb(153, 153, 153);
     display: flex;
@@ -80,17 +86,17 @@ body {
     align-items: center;
 
     .find {
-        width: 15px;
-        height: 15px;
-        margin-left: 5px;
+        width: .9375rem;
+        height: .9375rem;
+        margin-left: .3125rem;
     }
 
     .research {
-        // margin-left: 5px;
+        // margin-left: .3125rem;
         // width: @searchWidth;
         background-color: rgb(247, 247, 247);
         color: rgb(153, 153, 153);
-        border: 1px solid rgb(247, 247, 247);
+        border: .0625rem solid rgb(247, 247, 247);
 
         &:focus {
             outline: none;
@@ -98,94 +104,79 @@ body {
     }
 }
 
-
+@margin1: 23.4375rem * (20/(667*(420/375))); //划线与上方的间距
+@margin2: 23.4375rem * (.8125rem/(667*(420/375))); //划线与下方的间距
+@yuan1: 23.4375rem * (25/420); //圆
+@normalBoxH:23.4375rem * (60/420);
 .totalBox {
     display: flex;
     flex-direction: column;
-}
 
-@margin1:375px * (20/(667*(420/375))) ; //划线与上方的间距
-@margin2:375px * (13px/(667*(420/375)));  //划线与下方的间距
-@yuan1: 375px * (25/420); //圆
+    .normalBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        margin-left: @margin9;
+        height: @normalBoxH;
 
-.normalBox {
-    display: flex;
-    flex-direction: column;
-    margin-left: @margin9;
-}
+        .songName {
+            color: rgb(80, 125, 175);
+            font-size: .9375rem;
+            margin-bottom: .375rem;
+        }
 
-.divide {
-    margin-top: @margin1;
-    margin-bottom: @margin2;
-    height: 1px;
-    width: 100%;
-    background-color: rgb(229, 229, 229);
-}
+        .introduceAndSingpeople {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            color: rgb(153, 153, 153);
 
-.introduceAndSingpeople {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: rgb(153,153,153);
-}
+            .introduce {
+                font-size: .625rem;
+            }
 
-.introduce {
-    font-size: 10px;
-}
+            .singPeople {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                font-size: .625rem;
+            }
+        }
 
-.singPeople {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 10px;
-}
-
-.songName {
-    color: rgb(80,125,175);
-    font-size: 15px;
-}
-
-.yuanRight {
-    width: @yuan1;
-    height: @yuan1;
-    border-radius: 375px * (25/420) * (1/2);
-    background-color: transparent;
-    border: 1px solid rgb(153, 153, 153);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 10px;
+        .yuanRight {
+            width: @yuan1;
+            height: @yuan1;
+            border-radius: 23.4375rem * (25/420) * (1/2);
+            background-color: transparent;
+            border: .0625rem solid rgb(153, 153, 153);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: .625rem;
 
 
-    .triangleRight {
-        //三角
-        width: 0;
-        height: 0;
-        line-height: 0;
-        font-size: 0;
-        border: 7px solid transparent;
-        border-left-color: rgb(153, 153, 153);
-        margin-left: 10px;
+            .triangleRight {
+                //三角
+                width: 0;
+                height: 0;
+                line-height: 0;
+                font-size: 0;
+                border: .4375rem solid transparent;
+                border-left-color: rgb(153, 153, 153);
+                margin-left: .625rem;
+            }
+        }
+    }
+    .divide {
+        margin-top: @margin1;
+        margin-bottom: @margin2;
+        height: .0625rem;
+        width: 21.5625rem;
+        background-color: rgb(229, 229, 229);
+        margin-left: @margin9;
     }
 }
-
-// @yuan1:375px * (25/420);
-// .yuan {
-//     width: @yuan1;
-//     height: @yuan1;
-//     border-radius: @yuan1 / 2;
-//     position: absolute;
-//     right: 2px;
-// }
-
-// .triangle {
-//     width: 0;
-//     height: 0;
-//     line-height: 0;
-//     font-size: 0;
-//     border: 5px solid transparent;
-//     border-left-color: rgb(153, 153, 153);
-// }
 

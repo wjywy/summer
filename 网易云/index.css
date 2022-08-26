@@ -3,15 +3,15 @@ body {
   padding: 0;
 }
 .music {
-  margin-left: 145px;
-  margin-bottom: 53.57142857px;
+  margin-left: 9.0625rem;
+  margin-bottom: 3.34821429rem;
 }
 .findAndInput {
-  margin-left: 13.39285714px;
-  width: 339.28571429px;
-  height: 35.71428571px;
-  margin-bottom: 14.28571429px;
-  border-radius: 20px;
+  margin-left: 0.83705357rem;
+  width: 21.20535714rem;
+  height: 2.23214286rem;
+  margin-bottom: 0.89285714rem;
+  border-radius: 1.25rem;
   background-color: #f7f7f7;
   color: #999999;
   display: flex;
@@ -19,14 +19,14 @@ body {
   align-items: center;
 }
 .findAndInput .find {
-  width: 15px;
-  height: 15px;
-  margin-left: 5px;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-left: 0.3125rem;
 }
 .findAndInput .research {
   background-color: #f7f7f7;
   color: #999999;
-  border: 1px solid #f7f7f7;
+  border: 0.0625rem solid #f7f7f7;
 }
 .findAndInput .research:focus {
   outline: none;
@@ -35,29 +35,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 13.39285714px;
+  margin-left: 0.83705357rem;
 }
-.imgSongClass {
+.totalBox .imgSongClass {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10.71428571px;
+  margin-bottom: 0.66964286rem;
 }
-.pictureClass {
-  width: 102.67857143px;
-  height: 102.67857143px;
-  margin-right: 11.60714286px;
-  border-radius: 5px;
+.totalBox .imgSongClass .pictureClass {
+  width: 6.41741071rem;
+  height: 6.41741071rem;
+  margin-right: 0.72544643rem;
+  border-radius: 0.3125rem;
 }
-.songBox {
-  height: 102.67857143px;
-  width: 199.10714286px;
+.totalBox .imgSongClass .songBox {
+  height: 6.41741071rem;
+  width: 12.44419643rem;
   display: flex;
   flex-direction: column;
 }
-.songBox .songAndAuthor {
-  font-size: 14px;
-  margin-top: 13.39285714px;
+.totalBox .imgSongClass .songBox .songAndAuthor {
+  font-size: 0.875rem;
+  margin-top: 0.83705357rem;
   color: #666666;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -65,13 +65,13 @@ body {
 }
 .href {
   color: #507daf;
-  font-size: 8px;
+  font-size: 0.5rem;
 }
 a {
   text-decoration: none;
 }
 .know {
   color: #999999;
-  font-size: 8px;
-  margin-left: 120px;
+  font-size: 0.5rem;
+  margin-left: 7.5rem;
 }

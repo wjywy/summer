@@ -1,10 +1,10 @@
-@img: 375px * (115/420);   //图片宽高
-@margin1: 375px * (15/420);  //图片与左边
-@searchHeight:375px * (40/420); //搜索框高
-// @searchWidth:375px * (380/420) - 25;
-@findAndInputW:375px * (380/420);//搜索框宽
-@searchMargin:375px * (16/420);//搜索框与图片间距
-@musicMargin:375px * (60/420);//标题离左边间距
+@img: 23.4375rem * (115/420); //图片宽高
+@margin1: 23.4375rem * (15/420); //图片与左边
+@searchHeight: 23.4375rem * (40/420); //搜索框高
+// @searchWidth:23.4375rem * (380/420) - 25;
+@findAndInputW: 23.4375rem * (380/420); //搜索框宽
+@searchMargin: 23.4375rem * (16/420); //搜索框与图片间距
+@musicMargin: 23.4375rem * (60/420); //标题离左边间距
 
 body {
     margin: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 .music {
-    margin-left: 145px;
+    margin-left: 9.0625rem;
     margin-bottom: @musicMargin;
 }
 
@@ -21,79 +21,83 @@ body {
     width: @findAndInputW;
     height: @searchHeight;
     margin-bottom: @searchMargin;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: rgb(247, 247, 247);
     color: rgb(153, 153, 153);
     display: flex;
     flex-direction: row;
     align-items: center;
+
     .find {
-        width: 15px;
-        height: 15px;
-        margin-left: 5px;
+        width: .9375rem;
+        height: .9375rem;
+        margin-left: .3125rem;
     }
+
     .research {
-        // margin-left: 5px;
+        // margin-left: .3125rem;
         // width: @searchWidth;
         background-color: rgb(247, 247, 247);
         color: rgb(153, 153, 153);
-        border: 1px solid rgb(247, 247, 247);
+        border: .0625rem solid rgb(247, 247, 247);
+
         &:focus {
             outline: none;
         }
     }
 }
 
-
+@margin3: 23.4375rem * (12/420); //图片与图片间距
+@margin6: 23.4375rem * (13/420); //图片与文字间距
+@margin4: 23.4375rem * (15/420); //文字与文字间距
+// @margin5: 23.4375rem * (24/420);
+@songBoxSizeW: 23.4375rem * (223/420);
 
 .totalBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: @margin1;
-}
 
-@margin3: 375px * (12/420);  //图片与图片间距
+    .imgSongClass {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: @margin3;
 
-.imgSongClass {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: @margin3;
-}
+        .pictureClass {
+            width: @img;
+            height: @img;
+            margin-right: @margin6;
+            border-radius: .3125rem;
+        }
 
-@margin6:375px * (13/420);  //图片与文字间距
+        .songBox {
+            height: @img;
+            width: @songBoxSizeW;
+            display: flex;
+            flex-direction: column;
 
-.pictureClass {
-    width: @img;
-    height: @img;
-    margin-right: @margin6;
-    border-radius: 5px;
-}
-
-@margin4: 375px * (15/420);   //文字与文字间距
-// @margin5: 375px * (24/420);
-@songBoxSizeW:375px * (223/420);
-.songBox {
-    height: @img;
-    width: @songBoxSizeW;
-    display: flex;
-    flex-direction: column;
-    .songAndAuthor {
-        font-size: 14px;
-        margin-top: @margin4;
-        color: rgb(102, 102, 102);
-        // 超出文本用省略号显示
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+            .songAndAuthor {
+                font-size: .875rem;
+                margin-top: @margin4;
+                color: rgb(102, 102, 102);
+                // 超出文本用省略号显示
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
     }
 }
 
+
+
+
 //最后一排的文字
 .href {
-    color: rgb(80,125,175);
-    font-size: 8px;
+    color: rgb(80, 125, 175);
+    font-size: .5rem;
 }
 
 a {
@@ -102,7 +106,6 @@ a {
 
 .know {
     color: rgb(153, 153, 153);
-    font-size: 8px;
-    margin-left: 120px;
+    font-size: .5rem;
+    margin-left: 7.5rem;
 }
-

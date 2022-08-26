@@ -67,27 +67,15 @@ window.onload = function () {
                     }else {
                         songWordArea.scrollTop++;
                     }
-                },200);
+                },100);
                 if (count % 2 == 0) {
                     triangle.className = 'startSing';
                     pictureArea.classList.add('pictureAreaRotate');
                     audioButton.play();
-                //    var startAutoScroll =  setInterval(() => {
-                //         songWordArea.scrollTop++
-                //      }, 300);
-                    //  clearInterval(startAutoScroll);
                 } else {
                     triangle.className = 'triangle';
-                    pictureArea.className = 'pictureArea';
-                    // var startAutoScroll =  setInterval(() => {
-                    //     songWordArea.scrollTop++
-                    //  }, 300);
-                    
-                        // clearInterval(startAutoScroll);
-                    
-                    
+                    pictureArea.className = 'pictureArea';                    
                     audioButton.pause();
-                    
                 }
                 count++;
             })
