@@ -1,0 +1,35 @@
+@img: 23.4375rem * (115/420); //图片宽高
+@margin1: 23.4375rem * (15/420); //图片与左边
+@searchHeight: 23.4375rem * (40/420); //搜索框高
+@findAndInputW: 23.4375rem * (380/420); //搜索框宽
+@searchMargin: 23.4375rem * (16/420); //搜索框与图片间距
+.findAndInput {
+    margin-left: @margin1;
+    width: @findAndInputW;
+    height: @searchHeight;
+    margin-bottom: @searchMargin;
+    border-radius: 1.25rem;
+    background-color: rgb(247, 247, 247);
+    color: rgb(153, 153, 153);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .find {
+        width: .9375rem;
+        height: .9375rem;
+        margin-left: .3125rem;
+    }
+
+    .research {
+        // margin-left: .3125rem;
+        // width: @searchWidth;
+        background-color: rgb(247, 247, 247);
+        color: rgb(153, 153, 153);
+        border: .0625rem solid rgb(247, 247, 247);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

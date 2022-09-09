@@ -1,0 +1,78 @@
+@import url(./public/body.less);
+@import url(./public/find.less);//搜索框
+@img: 23.4375rem * (115/420); //图片宽高
+@margin1: 23.4375rem * (15/420); //图片与左边
+@searchHeight: 23.4375rem * (40/420); //搜索框高
+@findAndInputW: 23.4375rem * (380/420); //搜索框宽
+@searchMargin: 23.4375rem * (16/420); //搜索框与图片间距
+@musicMargin: 23.4375rem * (60/420); //标题离左边间距
+
+@margin3: 23.4375rem * (12/420); //图片与图片间距
+@margin6: 23.4375rem * (13/420); //图片与文字间距
+@margin4: 23.4375rem * (15/420); //文字与文字间距
+@songBoxSizeW: 23.4375rem * (223/420);
+
+
+.music {
+    margin-left: 9.0625rem;
+    margin-bottom: @musicMargin;
+}
+
+
+
+.totalBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: @margin1;
+
+    .imgSongClass {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: @margin3;
+
+        .pictureClass {
+            width: @img;
+            height: @img;
+            margin-right: @margin6;
+            border-radius: .3125rem;
+        }
+
+        .songBox {
+            height: @img;
+            width: @songBoxSizeW;
+            display: flex;
+            flex-direction: column;
+
+            .songAndAuthor {
+                font-size: .875rem;
+                margin-top: @margin4;
+                color: rgb(102, 102, 102);
+                // 超出文本用省略号显示
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
+
+
+//最后一排的文字
+.href {
+    color: rgb(80, 125, 175);
+    font-size: .5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.know {
+    color: rgb(153, 153, 153);
+    font-size: .5rem;
+    margin-left: 7.5rem;
+}
